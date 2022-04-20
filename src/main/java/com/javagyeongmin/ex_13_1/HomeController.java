@@ -70,7 +70,7 @@ public class HomeController {
 ////		model.addAttribute("name", name);
 ////		model.addAttribute("email", email);
 //		
-//		Member member = new Member();
+//		Member member = new Member(); // 멤버객체를 모델에 실어서 보냄
 //		
 //		member.setId(id);
 //		member.setPw(pw);
@@ -89,6 +89,13 @@ public class HomeController {
 		
 		
 		return "board/join";
+	}
+	
+	@RequestMapping(value = "board/login")
+	public String login() {
+		
+		
+		return "board/login";
 	}
 	
 }
